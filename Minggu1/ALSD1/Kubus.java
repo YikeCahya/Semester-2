@@ -4,9 +4,6 @@
  * No.absen: 27
  */
 
- /*
-  *program untuk menghitung volume, luas permukaan, dan keliling kubus(total panjang rusuk kubus)
-  */
 
 import java.util.Scanner;
 

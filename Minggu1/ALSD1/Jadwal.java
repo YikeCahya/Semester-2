@@ -4,12 +4,6 @@
  * No.absen: 27
  */
 
- /*
-  * Buat program yang dapat meneri input berupa data mata kuliah  sebanyak n (diinputkan pengguna).
-  Data mata kuliah yang diimputkan disetiap mata kuliah meliputi: nama mata kuliah(string), SKS(int), semster(int), dan hari kuliah(string, misal "senin").
-  data nama mata kuliah, sks, semester, dan hari kuliah, masihng masing disimpan dalam array 1 dimensi yang terpisah.
-  */
-
 import java.util.Scanner;
 
 public class Jadwal {
@@ -20,7 +14,7 @@ public class Jadwal {
         // Input jumlah mata kuliah
         System.out.print("Masukkan jumlah mata kuliah: ");
         int n = scanner.nextInt();
-        scanner.nextLine(); // Clear buffer
+        scanner.nextLine(); 
         
         // Mendeklarasikan array untuk data mata kuliah
         String[] matkul27 = new String[n];
@@ -37,7 +31,7 @@ public class Jadwal {
             sks27[i] = scanner.nextInt();
             System.out.print("Semester: ");
             semester27[i] = scanner.nextInt();
-            scanner.nextLine(); // Clear buffer
+            scanner.nextLine(); 
             System.out.print("Hari Kuliah (misal: senin): ");
             hariKuliah27[i] = scanner.nextLine();
         }
@@ -52,7 +46,7 @@ public class Jadwal {
             System.out.println("5. Keluar");
             System.out.print("Pilih menu: ");
             int pilihan = scanner.nextInt();
-            scanner.nextLine(); // Clear buffer
+            scanner.nextLine(); 
             
             if (pilihan == 1) {
                 // Menampilkan seluruh jadwal kuliah
@@ -114,17 +108,4 @@ public class Jadwal {
         
         scanner.close();
     }
-    
-    /*
-     * program dapat menampilkan jadwal kuliah berdasarkan pilihan pengguna.
-     * a. menampilkan seluruh jadwal kuliah
-     * b. menampilkan jadwal kuliah berdasarkan hari tertentu (misal, hanya jadwal kuliah hari selasa)
-     * c. menampilkan jadwal kuliah berdasarkan semester tertentu
-     */
-
-     /*
-      * program dapat mencari mata kuliah.
-      Program mencari dan menampilkan informasi mata kuliah
-berdasarkan nama mata kuliah yang diinputkan pengguna
-      */
 }
