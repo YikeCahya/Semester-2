@@ -1,19 +1,20 @@
 //Yulike DN(27/TI-1A)
 package Minggu3.ALSD3;
 
-public class DataDosen27 {
-
+public class DataDosen27 { 
+    //deklarasi array
     Dosen27[] daftarDosen;
     int jumlahDosen;
 
+    //konstruktok berparameter
     public DataDosen27() {
-        daftarDosen = new Dosen27[0]; // Awalnya array kosong
+        daftarDosen = new Dosen27[0]; //pengisian array, Awalnya array kosong
         jumlahDosen = 0;
     }
 
     public void tambahDosen(Dosen27 dosen) {
         // Membuat array baru dengan ukuran lebih besar
-        Dosen27[] temp = new Dosen27[jumlahDosen + 1];
+        Dosen27[] temp = new Dosen27[jumlahDosen + 1]; 
 
         // Salin data lama ke array baru
         for (int i = 0; i < jumlahDosen; i++) {

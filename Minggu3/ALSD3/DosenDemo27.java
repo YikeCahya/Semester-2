@@ -1,13 +1,13 @@
 //Yulike DN (27/TI-1A)
-
+//FILE INI BERISI MAIN DARI PROGRAM
 package Minggu3.ALSD3;
 import java.util.Scanner;
 
 public class DosenDemo27 {
-
+    //main dalam program ini
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        DataDosen27 dataDosen = new DataDosen27();
+        Scanner scanner = new Scanner(System.in); //deklarasi scanner
+        DataDosen27 dataDosen = new DataDosen27(); //deklarasi object
         int pilihan;
 
         do {
@@ -42,8 +42,16 @@ public class DosenDemo27 {
                         int usia = scanner.nextInt();
                         scanner.nextLine(); 
 
-                        Dosen27 dosen = new Dosen27(kode, nama, jenisKelamin, usia);
-                        dataDosen.tambahDosen(dosen);
+                        Dosen27 dosen = new Dosen27(kode, nama, jenisKelamin, usia); //memasukkan nilai tersebut ke array
+                        dataDosen.tambahDosen(dosen); //memanggil method tambahDosen() dengan parameter berisi array yang dosen agar disimpan kedalam array dataDosen
+                        /**
+                         * dataDosen
+                         * **dosen0
+                         * ***kode
+                         * ***nama
+                         * ***jenisKelamin
+                         * ***usia
+                         */
                     }
                     break;
 

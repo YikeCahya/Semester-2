@@ -1,16 +1,19 @@
 //Yulike Dwi N(27/TI-1A)
 package Minggu3.ALSD3;
 
-import java.util.Scanner;
+import java.util.Scanner; //Mengimport scanner
 
+//membentuk class bernama MataKuliah27
 public class MataKuliah27 {
+    //Deklarasi attribute
     public String kode;
     public String nama;
     public int sks;
     public int jumlahJam;
 
-    public MataKuliah27(String kode, String nama, int sks, int jumlahJam) {
-        this.kode = kode;
+    //konstruktok berparameter
+    public MataKuliah27(String kode, String nama, int sks, int jumlahJam) { //yang didalam itu namanya parameter
+        this.kode = kode; //dikasi this. karena nama attribute dan parameter sama
         this.nama = nama;
         this.sks = sks;
         this.jumlahJam = jumlahJam;
