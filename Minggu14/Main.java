@@ -1,3 +1,4 @@
+//Case Method sama Difa
 import java.util.Scanner;
 
 public class Main {
