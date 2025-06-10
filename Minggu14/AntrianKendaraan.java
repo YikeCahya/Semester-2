@@ -22,10 +22,14 @@ public class AntrianKendaraan {
 
     //Mengambil kendaraan dari antrian paling depan (dequeue)
     Kendaraan layaniKendaraan() {
-        if (front == null) return null;
+        if (front == null) {
+            return null;
+        }
         Kendaraan temp = front.data;
         front = front.next;
-        if (front == null) rear = null;
+        if (front == null) {
+            rear = null;
+        }
         size--;
         return temp;
     }

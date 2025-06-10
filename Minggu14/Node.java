@@ -1,4 +1,5 @@
 //Class untuk menyimpan objek Kendaraan
+//Menyimpan next
 public class Node {
     Kendaraan data;
     Node next;
